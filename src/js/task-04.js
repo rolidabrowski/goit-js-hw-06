@@ -6,13 +6,11 @@ var count = 0;
 totalCount.innerHTML = count;
 
 const handleIncrement = () => {
-  count++;
-  totalCount.innerHTML = count;
+  totalCount.innerHTML = ++count;
 };
 
 const handleDecrement = () => {
-  count--;
-  totalCount.innerHTML = count;
+  totalCount.innerHTML = --count;
 };
 
 incrementCount.addEventListener("click", handleIncrement);
